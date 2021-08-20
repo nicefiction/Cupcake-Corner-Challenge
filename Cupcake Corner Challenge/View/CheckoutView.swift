@@ -27,6 +27,7 @@ struct CheckoutView: View {
                   .resizable()
                   .scaledToFit()
                   .frame(width: geometryProxy.size.width)
+                  .accessibility(hidden: true)
                Text("Your order: $ \(cupcake.order.totalPrice, specifier: "%.2f")")
                Button(action: {
                   print("The button is tapped.")
